@@ -90,4 +90,4 @@ app.get('/', (req, res) => {
 
  
 
-app.listen(process.env.PORT || port)
+app.listen(process.env.PORT || port,() => console.log('sjdslk'))
