@@ -19,7 +19,8 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: process.env.FIRE_DB
 });
-
+ 
+const port = 3200;
 
 // connect data----------
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -89,4 +90,4 @@ app.get('/', (req, res) => {
 
  
 
-app.listen(3200)
+app.listen(process.env.PORT || port)
