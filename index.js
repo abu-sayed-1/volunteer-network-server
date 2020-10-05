@@ -68,7 +68,6 @@ client.connect(err => {
     })
 
 // delete method here ---------------------
-// delete method here ---------------------
 app.delete('/delete/:id', (req, res) => {
   register.deleteOne({_id: ObjectId(req.params.id)})
   .then (result => {
@@ -85,7 +84,7 @@ app.delete('/delete/:id', (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello Wold !')
+  res.send('Hello Wold  evrything is fine!')
 })
 
  
